@@ -23,6 +23,7 @@ public class MonsterMoverScript : MonoBehaviour {
 	void OnTriggerEnter(Collider hit){
 		if (hit.gameObject.name == "teapot") {
 			Debug.Log("HIT BASE");
+			hit.GetComponent<HealthManagerScript>().damage(5);
 			transform.FindChild("monsterModel").particleSystem.Play();
 			Destroy(gameObject, 0.2f);
 		}

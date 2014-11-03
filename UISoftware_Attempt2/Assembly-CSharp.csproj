@@ -63,6 +63,7 @@
      <Compile Include="Assets\Common\UIFramework\SceneViewManager.cs" />
      <Compile Include="Assets\Common\UIFramework\SplashScreenView.cs" />
      <Compile Include="Assets\GameplayScripts\EnemySpawnerScript.cs" />
+     <Compile Include="Assets\GameplayScripts\HealthManagerScript.cs" />
      <Compile Include="Assets\GameplayScripts\MonsterMoverScript.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCamera.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCameraController.cs" />
