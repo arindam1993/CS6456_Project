@@ -18,7 +18,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour,
     
     #endregion // PRIVATE_MEMBER_VARIABLES
 
-
+	public bool Tracked =false;
 
     #region UNTIY_MONOBEHAVIOUR_METHODS
     
@@ -66,6 +66,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour,
 
     private void OnTrackingFound()
     {
+		Tracked = true;
         Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
         Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 
@@ -87,6 +88,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour,
 
     private void OnTrackingLost()
     {
+		Tracked = false;
         Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
         Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 
