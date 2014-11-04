@@ -27,6 +27,12 @@ public class MonsterMoverScript : MonoBehaviour {
 			transform.FindChild("monsterModel").particleSystem.Play();
 			Destroy(gameObject, 0.2f);
 		}
+		if (hit.gameObject.name == "wall") {
+			Debug.Log("HIT WALL");
+			hit.GetComponent<HealthManagerScript>().damage(5);
+			transform.FindChild("monsterModel").particleSystem.Play();
+			Destroy(gameObject, 0.2f);
+		}
 	}
 
 }
