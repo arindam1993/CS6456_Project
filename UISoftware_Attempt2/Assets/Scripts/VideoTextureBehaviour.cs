@@ -42,7 +42,7 @@ public class VideoTextureBehaviour : MonoBehaviour, IVideoBackgroundEventHandler
     /// </summary>
     public float GetScaleFactorX()
     {
-        return (float)mTextureInfo.imageSize.x / (float)mTextureInfo.textureSize.x;
+		return (float)mTextureInfo.imageSize.x;// / (float)mTextureInfo.textureSize.x;
     }
 
     /// <summary>
@@ -50,7 +50,7 @@ public class VideoTextureBehaviour : MonoBehaviour, IVideoBackgroundEventHandler
     /// </summary>
     public float GetScaleFactorY()
     {
-        return (float)mTextureInfo.imageSize.y / (float)mTextureInfo.textureSize.y;
+		return (float)mTextureInfo.imageSize.y;// / (float)mTextureInfo.textureSize.y;
     }
 
     public void InitBehaviour()
@@ -62,6 +62,7 @@ public class VideoTextureBehaviour : MonoBehaviour, IVideoBackgroundEventHandler
             qcarBehaviour.RegisterVideoBgEventHandler(this);
         }
 
+		//m_Camera = Camera.allCameras[cameraNum];
         // Use the main camera if one wasn't set in the Inspector
         if (m_Camera == null)
         {
@@ -134,14 +135,16 @@ public class VideoTextureBehaviour : MonoBehaviour, IVideoBackgroundEventHandler
     private void CreateAndSetVideoTexture()
     {
         // Create texture of size 0 that will be updated in the plugin (we allocate buffers in native code)
-        mTexture = new Texture2D(0, 0, TextureFormat.RGB565, false);
+		mTexture = new Texture2D(0, 0, TextureFormat.RGB565, false);
 
         mTexture.filterMode = FilterMode.Bilinear;
         mTexture.wrapMode = TextureWrapMode.Clamp;
 
         // Assign texture to the renderer
+		// keep here
         renderer.material.mainTexture = mTexture;
-
+		//keep range
+		GameObject.Find ("webcamLeft").renderer.material.mainTexture = mTexture;
         // Set the texture to render into:
         if (!QCARRenderer.Instance.SetVideoBackgroundTexture(mTexture))
         {

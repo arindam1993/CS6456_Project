@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>E:/Development/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>E:/Development/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -111,6 +111,8 @@
      <Compile Include="Assets\Scripts\BackgroundTextureUIView.cs" />
      <Compile Include="Assets\Scripts\NegativeGrayscaleEffect.cs" />
      <Compile Include="Assets\Scripts\VideoTextureBehaviour.cs" />
+     <Compile Include="Assets\Scripts\WebcamTextureLeft.cs" />
+     <Compile Include="Assets\Scripts\WebcamTextureRight.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Qualcomm Augmented Reality\Shaders\VertexLitWithZ.shader" />
      <None Include="Assets\license_3rdpartynotice.txt" />
