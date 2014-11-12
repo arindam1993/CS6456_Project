@@ -35,6 +35,18 @@ public class MonsterMoverScript : MonoBehaviour {
 			transform.FindChild("monsterModel").particleSystem.Play();
 			Destroy(gameObject, 0.2f);
 		}
+		if (hit.gameObject.name == "slammerTrigger") {
+			Debug.Log("HIT Slammer");
+			hit.transform.parent.FindChild("slammerHammer").GetComponent<Animator>().SetBool("monsterEnter",true);
+			transform.FindChild("monsterModel").particleSystem.Play();
+			Destroy(gameObject, 0.2f);
+		}
+		if (hit.gameObject.name == "slammerWall") {
+			Debug.Log("HIT Slammer Wall");
+			hit.GetComponent<HealthManagerScript>().damage(5);
+			transform.FindChild("monsterModel").particleSystem.Play();
+			Destroy(gameObject, 0.2f);
+		}
 	}
 
 }

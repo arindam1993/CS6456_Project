@@ -141,6 +141,7 @@ public class VideoTextureBehaviour : MonoBehaviour, IVideoBackgroundEventHandler
 
         // Assign texture to the renderer
         renderer.material.mainTexture = mTexture;
+		GameObject.Find ("webcamLeft").renderer.material.mainTexture = mTexture;
 
         // Set the texture to render into:
         if (!QCARRenderer.Instance.SetVideoBackgroundTexture(mTexture))

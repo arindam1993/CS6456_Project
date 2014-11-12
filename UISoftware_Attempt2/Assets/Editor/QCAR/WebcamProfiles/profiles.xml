@@ -4,10 +4,10 @@
     <default>
         <windows>
             <!-- size of the web cam texture requested from Unity -->
-            <requestedTextureWidth>640</requestedTextureWidth>
-            <requestedTextureHeight>480</requestedTextureHeight>
+            <requestedTextureWidth>1280</requestedTextureWidth>
+            <requestedTextureHeight>720</requestedTextureHeight>
             <!-- size of the texture Unity's web cam texture will be rescaled to -->
-            <resampledTextureWidth>640</resampledTextureWidth>
+            <resampledTextureWidth>1280</resampledTextureWidth>
             <!-- <resampledTextureHeight>480</resampledTextureHeight> -->
         </windows>
         <osx>
@@ -127,10 +127,10 @@
     <webcam deviceName="Logitech Camera">
         <windows>
             <!-- size of the web cam texture requested from Unity -->
-            <requestedTextureWidth>640</requestedTextureWidth>
-            <requestedTextureHeight>480</requestedTextureHeight>
+            <requestedTextureWidth>1280</requestedTextureWidth>
+            <requestedTextureHeight>720</requestedTextureHeight>
             <!-- size of the texture Unity's web cam texture will be rescaled to -->
-            <resampledTextureWidth>640</resampledTextureWidth>
+            <resampledTextureWidth>1280</resampledTextureWidth>
         </windows>
         <osx>
             <!-- size of the web cam texture requested from Unity -->
