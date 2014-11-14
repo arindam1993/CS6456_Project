@@ -44,7 +44,7 @@ public class ResourceManagerScript : MonoBehaviour {
 				Debug.Log(dist);
 				if(dist< distanceThreshold && tracker.GetComponent<DefaultTrackableEventHandler>().Tracked){
 					Debug.Log("Pouring on "+tracker.name);
-					tracker.transform.FindChild("teapot").GetComponent<HealthManagerScript>().heal(healRate*Time.deltaTime);
+					//tracker.transform.FindChild("teapot").GetComponent<HealthManagerScript>().heal(healRate*Time.deltaTime);
 					tracker.transform.FindChild("wall").GetComponent<HealthManagerScript>().heal(healRate*Time.deltaTime);
 				}
 			}
