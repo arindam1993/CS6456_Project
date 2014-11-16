@@ -66,8 +66,10 @@
      <None Include="Assets\readme_SDK.txt" />
      <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
      <None Include="Assets\Shaders\NegativeGrayscale.shader" />
+     <None Include="Assets\StreamingAssets\QCAR\TowerDefensev3.xml" />
      <None Include="Assets\Editor\QCAR\WebcamProfiles\profiles.xml" />
      <None Include="Assets\Qualcomm Augmented Reality\Shaders\DepthMask.shader" />
+     <None Include="Assets\StreamingAssets\QCAR\TowerDefensev2.xml" />
      <None Include="Assets\StreamingAssets\QCAR\TowerDefense.xml" />
      <None Include="Assets\StreamingAssets\QCAR\Tarmac.xml" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />

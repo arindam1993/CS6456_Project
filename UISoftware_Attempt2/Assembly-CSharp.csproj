@@ -66,6 +66,7 @@
      <Compile Include="Assets\GameplayScripts\HealthManagerScript.cs" />
      <Compile Include="Assets\GameplayScripts\MonsterMoverScript.cs" />
      <Compile Include="Assets\GameplayScripts\ResourceManagerScript.cs" />
+     <Compile Include="Assets\GameplayScripts\TitleInfoManager.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCamera.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCameraController.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCrosshair.cs" />
@@ -117,6 +118,7 @@
      <Compile Include="Assets\Scripts\VideoTextureBehaviour.cs" />
      <Compile Include="Assets\Scripts\WebcamTextureLeft.cs" />
      <Compile Include="Assets\Scripts\WebcamTextureRight.cs" />
+     <Compile Include="Assets\Spin.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Qualcomm Augmented Reality\Shaders\VertexLitWithZ.shader" />
      <None Include="Assets\license_3rdpartynotice.txt" />
@@ -125,8 +127,10 @@
      <None Include="Assets\readme_SDK.txt" />
      <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
      <None Include="Assets\Shaders\NegativeGrayscale.shader" />
+     <None Include="Assets\StreamingAssets\QCAR\TowerDefensev3.xml" />
      <None Include="Assets\Editor\QCAR\WebcamProfiles\profiles.xml" />
      <None Include="Assets\Qualcomm Augmented Reality\Shaders\DepthMask.shader" />
+     <None Include="Assets\StreamingAssets\QCAR\TowerDefensev2.xml" />
      <None Include="Assets\StreamingAssets\QCAR\TowerDefense.xml" />
      <None Include="Assets\StreamingAssets\QCAR\Tarmac.xml" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />

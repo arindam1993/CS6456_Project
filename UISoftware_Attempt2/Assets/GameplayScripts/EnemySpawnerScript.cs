@@ -14,7 +14,7 @@ public class EnemySpawnerScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		spawnAngle = Random.Range (0, 359);
+		spawnAngle = Random.Range (-45, 45);
 		lastTime = Time.time;
 	}
 	
@@ -29,7 +29,7 @@ public class EnemySpawnerScript : MonoBehaviour {
 								GameObject instantiatedMonster = Instantiate (monster, spawnPosition, Quaternion.identity) as GameObject;
 								instantiatedMonster.transform.parent = resourceMine.transform;
 								lastTime = Time.time;
-								spawnAngle = Random.Range (0, 359);
+								spawnAngle = Random.Range (-45, 45);
 						}
 				}
 	

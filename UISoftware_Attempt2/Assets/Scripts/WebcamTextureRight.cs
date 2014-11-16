@@ -24,7 +24,7 @@ public class WebcamTextureRight : MonoBehaviour {
 			}
 		}
 		
-		backCamName = devices[1].name;
+		backCamName = devices[2].name;
 		WebCamTexture webcamTexture = new WebCamTexture(backCamName,1280,720,30);
 		renderer.material.mainTexture = webcamTexture;
 		webcamTexture.Play ();
