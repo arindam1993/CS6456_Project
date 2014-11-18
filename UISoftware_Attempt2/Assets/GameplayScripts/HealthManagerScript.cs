@@ -53,7 +53,7 @@ public class HealthManagerScript : MonoBehaviour {
 
 	public void damage(float dmgAmount){
 		currentHealth -= dmgAmount;
-		currentHealth=Mathf.Clamp(currentHealth,0,startHealth);
+		currentHealth=Mathf.Clamp(currentHealth,-1,startHealth);
 		Debug.Log (gameObject.name + " takes " + dmgAmount + "damage" + currentHealth/startHealth);
 		healthBar.transform.localScale = new Vector3(currentHealth/startHealth, 1, 1);
 		if (currentHealth < 0) {

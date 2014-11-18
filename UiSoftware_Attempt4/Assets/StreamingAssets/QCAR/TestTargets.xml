@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="MorphedTarget" size="3.000000 4.202462" />
+    <ImageTarget name="MultiRect" size="3.000000 4.202462" />
+    <ImageTarget name="MultiColor" size="4.000000 4.000000" />
+    <ImageTarget name="SuperWall" size="3.000000 8.404924" />
+  </Tracking>
+</QCARConfig>
